@@ -1,0 +1,66 @@
+{
+  "rank": 69,
+  "domain": "UnityEditor",
+  "ideaNo": 7,
+  "ideaName": "NavMesh・Input・Localization検査",
+  "repository": "navmesh-input-localization-auditor",
+  "publish": "GitHub Release / BOOTH",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/UnityEditor/created_idea_007_navmesh-input-localization-auditor",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/UnityEditor/created_idea_007_navmesh-input-localization-auditor/idea_007_navmesh-input-localization-auditor.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "UnityEditor",
+    "no": 7,
+    "platform": "UnityEditor",
+    "field": "Unity制作支援",
+    "integration": "",
+    "idea": "NavMesh・Input・Localization検査",
+    "overview": "NavMesh Bake、InputAction、Localization Tableを用途別に検査する。 入力、確認、履歴保存、次アクションを同じ作業単位で扱えるようにする。",
+    "problem": "専門設定は異常に気づくまで時間がかかる。",
+    "similar": "Unity Editor, Odin Inspector, Rider, Unity Asset Store Tools, Addressables, Memory Profiler",
+    "diff": "よく壊れる項目に絞った小さな検査セットにする。",
+    "parent": "Plugins",
+    "startPromptFile": "START_PROMPT.md",
+    "documents": [
+      "START_PROMPT.md",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md",
+      "metadata.json"
+    ],
+    "repositoryName": "navmesh-input-localization-auditor",
+    "repositoryTitle": "navmesh-input-localization-auditor",
+    "zipFile": "idea_007_navmesh-input-localization-auditor.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}
