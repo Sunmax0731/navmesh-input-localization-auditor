@@ -1,0 +1,32 @@
+{
+  "repository": "navmesh-input-localization-auditor",
+  "title": "NavMesh・Input・Localization検査",
+  "domain": "UnityEditor",
+  "hostApp": null,
+  "rank": 69,
+  "tier": "P2",
+  "ideaNo": 7,
+  "overview": "NavMesh Bake、InputAction、Localization Tableを用途別に検査する。 入力、確認、履歴保存、次アクションを同じ作業単位で扱えるようにする。",
+  "problem": "専門設定は異常に気づくまで時間がかかる。",
+  "differentiation": "よく壊れる項目に絞った小さな検査セットにする。",
+  "publish": "GitHub Release / BOOTH",
+  "surface": "UnityEditor product spec + CLI validation core",
+  "entity": "Unity audit target",
+  "requiredFields": [
+    "id",
+    "title",
+    "scenePath",
+    "navMeshProfile",
+    "inputAction",
+    "localeKey"
+  ],
+  "warningField": "fallbackLocale",
+  "qcdsManualTestCap": "S-",
+  "qcdsTarget": "A-",
+  "benchmarkRepos": [
+    "Sunmax0731/project-portfolio-generator",
+    "Sunmax0731/release-output-check-flow",
+    "Sunmax0731/movie-telop-transcriber",
+    "Sunmax0731/codex-remote-android"
+  ]
+}

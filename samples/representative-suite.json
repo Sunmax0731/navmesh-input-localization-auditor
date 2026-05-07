@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "NavMesh・Input・Localization検査 の正常入力を検証する",
+    "items": [
+      {
+        "id": "navmesh-input-localization-auditor-happy",
+        "title": "NavMesh・Input・Localization検査 happy",
+        "status": "ready",
+        "tags": [
+          "unityeditor"
+        ],
+        "scenePath": "Assets/Scenes/Sample.unity",
+        "navMeshProfile": "DefaultNavMesh",
+        "inputAction": "Player/Move",
+        "localeKey": "ui.sample.title",
+        "fallbackLocale": "NavMesh・Input・Localization検査 の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "navmesh-input-localization-auditor-missing",
+        "status": "ready",
+        "tags": [
+          "unityeditor"
+        ],
+        "scenePath": "Assets/Scenes/Sample.unity",
+        "navMeshProfile": "DefaultNavMesh",
+        "inputAction": "Player/Move",
+        "localeKey": "ui.sample.title",
+        "fallbackLocale": "NavMesh・Input・Localization検査 の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "navmesh-input-localization-auditor-warning",
+        "title": "NavMesh・Input・Localization検査 warning",
+        "status": "ready",
+        "tags": [
+          "unityeditor"
+        ],
+        "scenePath": "Assets/Scenes/Sample.unity",
+        "navMeshProfile": "DefaultNavMesh",
+        "inputAction": "Player/Move",
+        "localeKey": "ui.sample.title"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "navmesh-input-localization-auditor-happy",
+        "title": "NavMesh・Input・Localization検査 happy",
+        "status": "ready",
+        "tags": [
+          "unityeditor"
+        ],
+        "scenePath": "Assets/Scenes/Sample.unity",
+        "navMeshProfile": "DefaultNavMesh",
+        "inputAction": "Player/Move",
+        "localeKey": "ui.sample.title",
+        "fallbackLocale": "NavMesh・Input・Localization検査 の確認観点"
+      },
+      {
+        "id": "navmesh-input-localization-auditor-missing",
+        "status": "ready",
+        "tags": [
+          "unityeditor"
+        ],
+        "scenePath": "Assets/Scenes/Sample.unity",
+        "navMeshProfile": "DefaultNavMesh",
+        "inputAction": "Player/Move",
+        "localeKey": "ui.sample.title",
+        "fallbackLocale": "NavMesh・Input・Localization検査 の確認観点"
+      },
+      {
+        "id": "navmesh-input-localization-auditor-warning",
+        "title": "NavMesh・Input・Localization検査 warning",
+        "status": "ready",
+        "tags": [
+          "unityeditor"
+        ],
+        "scenePath": "Assets/Scenes/Sample.unity",
+        "navMeshProfile": "DefaultNavMesh",
+        "inputAction": "Player/Move",
+        "localeKey": "ui.sample.title"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]
