@@ -1,0 +1,11 @@
+{
+  "product": "navmesh-input-localization-auditor",
+  "title": "NavMesh・Input・Localization検査",
+  "domain": "UnityEditor",
+  "ideaNo": 7,
+  "platformType": "unity-editor-package",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
